@@ -61,6 +61,8 @@
 /* This callback is triggered when a key is pressed */
 void MSA_Main_KeyCallback(uint8 keys, uint8 state);
 
+void mainUART (void);
+
 /**************************************************************************************************
  * @fn          main
  *
@@ -72,10 +74,11 @@ void MSA_Main_KeyCallback(uint8 keys, uint8 state);
  **************************************************************************************************
  */
 int main(void)
-{
+{  
+  //mainUART();
   /* Initialize hardware */
   HAL_BOARD_INIT();
-
+  
   // Initialize board I/O
   InitBoard( OB_COLD );
 

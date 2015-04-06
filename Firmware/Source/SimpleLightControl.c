@@ -706,10 +706,10 @@ static void simpleProfileChangeCB( uint8 paramID )
   {
     case SIMPLEPROFILE_CHAR1:
       SimpleProfile_GetParameter( SIMPLEPROFILE_CHAR1, &newValue );
-      if(newValue)
-        HalLedSet( (HAL_LED_1 | HAL_LED_2), HAL_LED_MODE_ON );
-      else
-        HalLedSet( (HAL_LED_1 | HAL_LED_2), HAL_LED_MODE_OFF );
+//      if(newValue)
+//        HalLedSet( (HAL_LED_1 | HAL_LED_2), HAL_LED_MODE_ON );
+//      else
+//        HalLedSet( (HAL_LED_1 | HAL_LED_2), HAL_LED_MODE_OFF );
 
       break;
 
